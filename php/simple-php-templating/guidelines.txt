@@ -1,0 +1,37 @@
+#
+# TEMPLATE STRUCTURE
+#
+
+	APP
+		CLASS
+		ads.php
+		autoload.php
+		functions.php
+		plugins.php
+		routing.php
+
+	TEMPLATES
+		[assign template folder]
+			CONFIG
+				redirect.php
+				urls.php
+			CONTENTS
+				[contents].php
+			LAYOUT
+				head.php
+				footer.php
+				header.php
+			404.php
+			article.php
+			homepage.php
+			sections.php
+		tpl-config.php
+	index.php
+
+
+#
+# ARTICLE CONTENT FUNCTIONS
+#
+
+	videobox($url,$caption="");
+	photocaption($imgsrc,$caption)
