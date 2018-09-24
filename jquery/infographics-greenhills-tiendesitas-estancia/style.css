@@ -1,0 +1,238 @@
+.infog-items {
+    position: relative;
+    max-width: 800px;
+    width: initial;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.infog-items .map img {
+    max-width: 100%;
+    width: initial;
+}
+.tab .title, .tab .icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tab-list ul {
+    padding-left: 0;
+    margin: 0;
+}
+.tab-list li {
+    list-style: none;
+    cursor: pointer;
+}
+.tab .icon {
+    border-radius: 50%;
+    height: 29px;
+    width: 29px;
+    margin-right: 9px;
+    overflow: hidden;
+    background-color: #c0c4cd;
+    margin-bottom: 2px;
+}
+.tab .icon img {
+    max-width: 28px;
+}
+.infog-items.tiendesitas-infog-v1 .tab.active .icon {
+    background-color: #411e1e;
+}
+.infog-items.greenhills-infog-v1 .tab.active .icon {
+    background-color: #fbb039;
+}
+.infog-items.estancia-infog-v1 .tab.active .icon {
+    background-color: #4d3a30;
+}
+.title-wrap, .tab-wrap, .marker-details {
+    position: absolute;
+}
+.tab-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.title-wrap {display: none;}
+.marker-details {
+    bottom: 0;
+}
+.tab-list {
+    padding-left: 3.5%;
+    padding-top: 14.5%;
+    color: gray;
+    font-size: .8rem;
+    display: inline-block;
+}
+.tabcontent-list .tabcontent{
+    display: none;
+}
+.tabcontent-list .tabcontent:first-child {
+    display: block;
+}
+.marker {
+    position: absolute;
+    max-width: 5.5%;
+    cursor: pointer;
+    transform: rotate(-8deg);
+}
+.infog-items.greenhills-infog-v1 .marker{
+    transform: rotate(0deg);
+}
+.marker:hover span{
+    opacity:1;
+}
+.marker span {
+    position: absolute;
+    min-width: 80px;
+    color: black;
+    bottom: 100%;
+    margin-left: -45%;
+    text-align: center;
+    font-size: x-small;
+}
+.marker img {
+    max-width: 100%;
+    width: initial;
+}
+.slider {
+    overflow-y: auto;
+    max-height: 86%;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition-property: all;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -ms-transition-property: all;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    background: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    border: 1px solid #f3f3f3;
+}
+.slider.closed {
+    max-height: 0;
+}
+.content-wrap {
+    padding: 0 4% 4% 4%;
+    position: relative;
+}
+
+.infog-items img {
+    max-width: 100%;
+    width: initial;
+    display: inline-block;
+}
+.close {
+    position: sticky;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 10;
+    text-align: right;
+    float: right;
+    margin-right: -4%;
+}
+.close span{
+    background-color: #8e8e8e;
+    color: white;
+    padding: 4px 8px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: relative;
+    display: block;
+}
+.marker-details .title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #373838;
+    padding-bottom: 5px;
+    padding-top: 4%;
+}
+
+.marker-details .main {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    max-height: 310px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.marker-details .main img {
+    width: 100%;
+}
+.marker-details .main .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000b0;
+    padding: 1.2%;
+    color: white;
+    font-size: .75rem;
+    font-weight: normal;
+    text-align: left;
+}
+.must-try {
+    display: inline-block;
+    font-size: .8rem;
+}
+.sub-title {
+    font-weight: 600;    
+}
+.label {
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+.photos {
+    display: block;
+}
+.small-photo {
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 5px;
+    vertical-align: top;
+    max-height: 200px;
+    overflow: hidden;
+}
+.photos.total-1 .small-photo {
+    width: 50%;
+}
+.photos.total-2 .small-photo {
+    width: 50%;
+}
+.location {
+    display: block;
+    font-size: .8rem;
+    vertical-align: top;
+}
+
+@media (max-width:600px) {
+   /* Portrait styles here */
+   .marker span {
+        display: none;
+    }
+    .tab .title {
+        font-size: xx-small;
+    }
+    .marker-details .title {
+        font-size: 1rem;
+    }
+    .small-photo {
+        width: 100%;
+    }
+}
