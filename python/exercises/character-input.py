@@ -1,7 +1,7 @@
+
 '''
 https://www.practicepython.org/
-Create a program that asks the user to enter their name and their age.
-Print out a message addressed to them that tells them the year that they will turn 100 years old.
+Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
 
 Extras:
 
@@ -10,8 +10,8 @@ Extras:
 '''
 import datetime
 
-name = input("Enter your Name: ")
-age = int(input("Enter your age: "))
+name = input("Enter your Name:")
+age = int(input("Enter your age:"))
 year_age100 = datetime.datetime.now().year + (100 - age)
 
-print("Hi {} you will turn 100 years in {}".format(name, year_age100))
+print ("Hi {} you will turn 100 years in {}".format(name, year}))
